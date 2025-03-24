@@ -17,6 +17,20 @@
 	margin:0 auto;
 	}
 
+.image-container {
+	    display: block;
+	    width: 100%;
+	    text-align: center;
+}
+
+.image-container img {
+	    width: 80%; /* 画像のサイズを調整（好みに応じて変更可） */
+	    margin: 10px auto;
+	    display: block;
+	    border-radius: 10px; /* 角を丸めてデザインを柔らかく */
+}
+
+
 #course{
 	max-width:100%;/*背景の横幅いっぱいにするため*/
 	margin:0 auto;

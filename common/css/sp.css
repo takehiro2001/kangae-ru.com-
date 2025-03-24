@@ -54,6 +54,18 @@ h1{
 .drawer-nav{
 	background:#fbe8eb !important;}
 
+.image-container {
+	    display: block;
+	    width: 100%;
+	    text-align: center;
+}
+
+.image-container img {
+		width: 90%; /* スマホでは90%の幅に */
+		max-width: 100%; /* 最大幅を制限なし */
+}
+
+
 
 ul{
     list-style-type: none;
