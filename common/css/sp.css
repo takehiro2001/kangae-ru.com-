@@ -1,0 +1,874 @@
+@charset "UTF-8";
+
+/*===============================================
+画面の横幅が768pxまで（スマホ用）
+===============================================*/
+@media screen and (max-width:768px){
+
+
+.pc{
+	display:none;
+	}
+/*bxsliderのレスポンシブ*/
+.pc_slider { display: none !important; }
+.sp_slider { display: block !important; }
+/*-------------------*/
+
+.contents{
+	margin:0 auto;
+	}
+
+#header{
+    padding: 20px 1% 0 1%;
+    border-bottom: #70b000 6px solid;
+    background-color: white;
+	}
+
+
+#logo{
+	width:250px;
+	margin: 0 auto;
+	float:left;
+	padding-bottom: 17px;/*rogo画像でheder下の隙間埋める*/
+	}
+
+h1{
+	display:none;
+	}
+
+#tel_sp{
+	float:right;
+	margin:0 60px 0 0;}/*# テレフォンロゴを60pxから70pxで左に移動 */
+
+#tel{
+	display:none;}
+
+.drawer--right .drawer-hamburger, .drawer--right.drawer-open  .drawer--right.drawer-open .drawer-navbar .drawer-hamburger {
+    right: 0;
+    margin: 10px 0 0 0;
+}
+
+.drawer-hamburger {
+    position: absolute !important;}
+
+.drawer-nav{
+	background:#fbe8eb !important;}
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul#menu li {
+    color: black;
+    position: relative;
+    margin: 0;
+    padding: 5px 10px;
+    display: block;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+ul#menu  .child li{
+	border-bottom:none;
+	padding:0;
+	}
+
+ul#menu li a{
+	color:#333;	text-decoration:none;
+	}
+
+ul#menu li a:hover{
+	color:#043592;
+	background:url(../../images/menu_on.png) repeat-x bottom;
+	}
+
+
+#image{
+	padding-top: 20px;/*# margin-top:20pxでした。sliderの上画像切れを補正 */
+	width:1000px;/*100%の場合は横画面でiphone11完全固定*/}
+
+
+#course{
+    background: #fbe8eb;
+	padding:5% 1%;
+    margin: 10px 0;
+	}
+
+.course_box{
+	position: relative;
+	width: 100%; /* スマホでは1列にする */
+	margin: 0 auto 20px;
+	float: none;
+	text-align: center;
+	}
+
+.course_box img{
+	border-radius:10px;
+		width:98%;
+}
+
+
+.course_box p{
+	margin:10px 0 0 0;
+	}
+
+.course_name {
+	color:#df506a;
+	font-weight:bold;
+background: linear-gradient(transparent 60%, #f5c0c9 60%);
+}
+
+.course_box a{position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-indent:-999px;
+	}
+
+.course_box a:hover{
+	background-color:#fbe8eb;
+    filter:alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+
+
+#topics{
+	border:#e5e5e5 4px solid;
+	border-radius:10px;
+	padding:30px;
+	font-size:14px;
+	margin:0 1% 2%;
+	background-color: white;
+	}
+
+#topics dl{
+	margin:10px 0 0 0;
+	height:285px;
+	overflow-y:scroll;
+	padding:0 10px 0 0;
+	}
+
+#topics dt{
+	color: #df5c94;
+	font-weight:bold;
+	font-style:italic;
+	}
+
+#topics dd{
+	margin-bottom:10px;}
+
+
+#top_bnr{
+	margin:0 1%;
+	width:98%;
+	}
+
+#top_bnr img{
+	width:100%;
+	}
+
+.pc_bnr_size { display: none !important; }
+.sp_bnr_size { display: block !important; }
+
+#top_about{
+	padding:10px 2%;
+	}
+
+#top_about h2{
+	color:#043592;
+	font-weight:boldp;
+	font-size:25px;
+	font-weight:bold;
+	margin-bottom:20px;}
+
+.top_about{
+	border:#CCC 2px solid;
+	padding:20px;
+	margin-bottom:10px;
+	background-color: white;
+}
+
+#top_about p{
+    line-height: 1.8em;
+}
+
+#top_about a{
+	text-align:center;
+	display:block;
+	border:#df506a 2px solid;
+	color:#df506a;
+	padding:5% ;
+	font-weight:bold;
+	width:89%;
+	font-size:14px;
+	margin:10px 0;
+	background-color: white;
+	}
+
+#top_about a:hover{
+	text-decoration:none;
+	background:#df506a;
+	color:#FFF;
+	}
+
+#bnr{
+	background:#f2f2f2;
+	/*padding:15px 0;*/
+	}
+
+#bnr img{
+	/*border:#CCC 1px solid;*/
+	/*margin: 0% 5%;widthが90%のため左右に5%必要*/
+	/*width:90%	*/
+	}
+/*================================================
+ *  バナー配置
+ ================================================*/
+
+.bnr_me{
+	background:#f2f2f2;
+	display: flex;
+	flex-wrap:wrap;
+	}
+
+.bnr_me li{
+	width: calc(100%/2);/*←画像を横に2つ並べる場合*/
+	padding:0 5px;/*←画像の左右に5px余白を入れる場合*/
+	box-sizing:border-box;
+	}
+
+.bnr_me li img{
+	max-width:100%; /*画像のはみだしを防ぐ*/
+	height: auto; /*画像の縦横比を維持 */
+	border:solid 1px #ccc; /*←画像を1pxのグレーの枠線で囲む指定の場合*/
+}
+
+.bnr_me a {
+	text-decoration: none;
+}
+
+.bnr_me_gaudia{
+	background:#f2f2f2;
+	display: flex;
+	flex-wrap:wrap;
+	}
+
+.bnr_me_gaudia li{
+	width: 100%;
+	padding:20px 5px 0 5px;/*←画像の上に余白を入れる場合*/
+	box-sizing:border-box;
+	}
+
+.bnr_me_gaudia li img{
+	max-width:100%; /*画像のはみだしを防ぐ*/
+	height: auto; /*画像の縦横比を維持 */
+	border:solid 1px #ccc; /*←画像を1pxのグレーの枠線で囲む指定の場合*/
+}
+
+.bnr_me_gaudia a {
+	text-decoration: none;
+}
+
+/*================================================
+ *  バナー配置end
+ ================================================*/
+
+
+
+#footer{
+	background:#70b000;
+	padding-top:30px;
+	padding-bottom:30px;
+	text-align:center;
+	color:#FFF;
+	}
+
+#footer p{
+	font-size:12px;
+	}
+
+#footer p a{
+		color:#FFF;}
+
+#footer p#cr{
+	margin-top:10px;
+	font-size:10px;}
+#add{
+	margin-bottom:10px;}
+
+
+#h2{
+	padding:30px 5px;
+	color:#f0e869;
+	font-size:24px;
+	background:#70b000;
+	}
+
+#h2 span{
+	color: #FFF;
+	font-size:12px;
+	margin-left:10px;
+	}
+
+
+div.course_second{
+	margin-bottom:0 !important;
+	}
+
+.course{
+	border:#CCC 3px solid;
+	padding:20px 20px 0 20px;
+	margin-bottom:10px;
+	}
+
+.course p{
+	line-height:1.8em;}
+
+.course h3{
+	color:#ec6d84;
+	font-weight:bold;
+	font-size:24px;
+	margin-bottom:15px;}
+
+.course h3.blue{
+	color:#589bf5;
+	font-weight:bold;
+	font-size:24px;
+	margin-bottom:15px;}
+
+.course h3.blue span{
+	background:#333;
+	color:#FFF;
+	font-size:15px;
+	padding:5px 10px;
+	border-radius:10px;
+	margin:0 5px 0 15px;
+	}
+
+.course h3.blue b{
+	color:#333;
+	}
+
+
+.schedule{
+	border-top:#CCC 1px solid;
+	width:100%;
+	margin:20px 0;}
+
+.schedule th{
+	background:#f0f1dd;
+	font-weight:bold;}
+
+.schedule th,
+.schedule td{
+	display:block;
+	width:90%;
+	padding:5%;
+	border-bottom:#CCC 1px solid;
+	border-left:#CCC 1px solid;
+	border-right:#CCC 1px solid;}
+
+.course_info{
+	background:#edcbd1;
+	color:#333;
+	border-radius:10px;
+	padding:10px 20px;
+	margin: 0 0 20px 0;
+	}
+
+.course_info2{
+    border: #edcbd1 3px solid;
+	color:#333;
+	border-radius:10px;
+	padding:10px 20px;
+	margin: 0 0 10px 0;
+	}
+
+
+.blue_info{
+	background:#cbdcf3;
+	color:#333;
+	border-radius:10px;
+	padding:10px 20px;
+	margin: 20px 0 20px 0;
+	}
+
+.course_info .min{
+	}
+
+.course_info .price{
+	}
+
+.course_info .price .kakaku{
+	}
+
+.course_info .price .teiin,
+.schedule .teiin{
+	background:#e82649;
+	color:#FFF;
+	border-radius:5px;
+	font-size:15px;
+	padding:3px 10px;
+	margin:0 5px 0 10px;
+	}
+
+/*courseクラスのh2装飾でデザイン追加*/
+.course h2 {
+  position: relative;
+  color: black;
+  background: #d0ecff;
+  line-height: 1.4;
+  padding: 0.25em 0.5em;
+  margin: 2em 0 0.5em;
+  border-radius: 0 5px 5px 5px;
+}
+
+.course h2:after {
+  /*タブ*/
+  position: absolute;
+  font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
+  font-weight: 900;
+  content: '\f00c Check';
+  background: #2196F3;
+  color: #fff;
+  left: 0px;
+  bottom: 100%;
+  border-radius: 5px 5px 0 0;
+  padding: 3px 7px 1px;
+  font-size: 0.7em;
+  line-height: 1;
+  letter-spacing: 0.05em
+}
+/*courseクラスのh2装飾でデザイン追加,ここまで*/
+
+.course h4{
+	background:#d9d9d9;
+	font-weight:bold;
+	padding:10px 20px;
+	font-size:18px;
+	margin:0 0 10px 0;
+	}
+
+
+#training_image{
+	margin-bottom:30px;}
+
+#training_image img{
+	width:100%;}
+
+
+
+
+#faq{
+	padding:1%;}
+
+
+#faq h3{
+    color: #fff;
+    /* line-height: 2em; */
+    font-size: 18px;
+    /* margin-bottom: 20px; */
+    letter-spacing: 3px;	}
+
+
+#faq dt{
+color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: #ec6d84;
+    margin: 10px 0 0 0;
+    cursor: pointer;}
+
+#faq dd{
+	border-radius:10px;
+padding: 10px 20px;
+background:#f5f4ec;
+	margin:10px 0 0 0;
+	display: none;
+	}
+
+
+#faq dt span,
+#faq dd span{
+	font-size:18px;
+	font-weight:bold;
+	}
+
+#faq dt span,
+#faq dt p
+
+{
+	display:block;
+	float:left;
+	}
+
+#faq dd span{
+	display:block;
+	}
+
+
+
+
+
+#faq dt p{
+		font-size:20px;
+padding: 20px 0 0 10px;
+}
+
+
+
+#faq dd div{font-size:15px;
+}
+
+#faq h4{
+    margin: 20px 0 5px 0;
+	color:#333;
+	font-weight:bold;
+	font-size:20px;
+	border-bottom:#333 2px solid;
+	}
+
+#faq a{
+	background:#ea4270;
+	color:#FFF;
+	display:block;
+	padding:10px 20px;
+	margin-bottom:5px;
+	}
+
+table.table th{
+	white-space:nowrap;
+	background:#f4dbe2;
+	color: #333;
+	font-weight:bold;
+	}
+
+table.table th,
+table.table td{
+	display:block;
+	width:90%;
+	padding:5%;
+	border-bottom: #baafc1 1px dotted;
+	}
+
+table.table td th,
+table.table td td{
+	background:none;
+	border-bottom:none;
+	font-weight:100;
+	padding:0;}
+
+
+.form th span{
+	color:#900;
+	}
+
+#contact{
+    font-size: 18px;
+	padding:10px 60px;
+	margin:30px 0 30px 0;
+	}
+
+
+#contact_tel{
+	background:#F3F4DD;
+	padding:20px;
+	margin-bottom:30px;
+	}
+
+#contact_tel p{
+    background: url(../../images/tel.png) no-repeat left;
+    padding: 0 0 0 50px;
+    font-size: 29px;
+    font-style: italic;
+    font-weight: bold;
+	}
+
+#soudan_tel{
+	background:#FFFFFF;
+	padding:20px;
+	text-align:left;
+	margin-bottom:30px;
+	border: 2px solid;
+	border-color: #8b8b8b;
+	border-radius: 8px;/*角丸の枠線*/
+	}
+
+#soudan_tel p{
+    padding: 15px 20px 15px 20px;
+    font-size: 15px;
+	}
+
+.voice_box{
+	border:#CCC 3px solid;
+	padding:10px 5%;
+	margin-bottom:30px;
+	text-align:center;
+	}
+
+.voice_box img{
+	margin:0 auto;}
+
+.voice_box p{
+	text-align:left;
+	}
+
+
+#about p{
+	margin:5% 5%;}
+
+
+h3.second{
+
+    position: relative;
+    color: #111;
+    font-size: 1.143em;
+    font-weight: bold;
+    margin: 30px 0 1.5em;
+    padding: 0.5em 0.5em 0.5em 1.7em;
+    border-bottom: 3px solid #B92A2C;
+}
+
+h3.second:before{
+    content: "";
+    position: absolute;
+    background: #d48789;
+    top: 0;
+    left: 0.4em;
+    height: 12px;
+    width: 12px;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+h3.second:after{
+    content: "";
+    position: absolute;
+    background:#d26466;
+    top: 1.0em;
+    left: 0;
+    height: 8px;
+    width: 8px;
+    transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+}
+
+
+#profile{
+	background:#ffecef;
+	margin-bottom:30px;
+	text-align:center;
+	padding:10px;}
+
+
+#profile img{
+	width:50%;
+	margin:0 auto;
+	}
+
+
+#profile p{
+	padding:20px 0 0 0;}
+
+#profile p b{
+	color:#ed778c;
+	margin-bottom:20px;
+	}
+
+#goukaku{}
+
+
+#goukaku h3{
+	margin:0 auto;
+	width:276px;
+	}
+
+#goukaku ul{
+		float:left;
+	width:300px;
+	margin:10px;
+}
+
+#goukaku ul li.category{
+width: 100%;	background:#ed778c;
+	color:#FFF;
+	font-family:"Times New Roman", Times, serif;
+	font-weight:bold;
+	padding:10px 20px;
+	font-size:17px;
+	margin-bottom:10px;
+	}
+
+#goukaku ul li{
+	font-family:"Times New Roman", Times, serif;
+	color: #000;
+	padding:0 0 0 10px;
+	margin:5px 0;
+	}
+
+#intro_img img{
+	width:90%;
+	margin:5px 5%;
+}
+
+
+#intro_table{
+	width:100%;
+	margin-bottom:30px;}
+
+
+
+#intro_img2 img{
+	width:90%;
+	margin:5px 5%;
+}
+
+#intro_img2 iframe{
+	width:90%;
+	margin:5px 5%;
+	height:304px;
+	}
+
+#selfit{
+	text-align:center;
+	background:#f1f1f1;
+	padding:30px 5%;
+	margin:20px 0;
+	}
+
+#selfit img{
+	width:100%;
+}
+
+
+.info_box{
+	border:#CCC 2px solid;
+	padding:5%;
+	margin-bottom:10px;
+	background-color: white;
+	}
+
+.info_date{
+	color:#ec6d84;
+	font-weight:bold;
+	margin:0 0 5px 0;
+	}
+
+.info_box div{
+	float:left;}
+
+.info_box img{
+	width:100%;
+	}
+
+.info_date span {
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 10px;
+    color: #FF0;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    background: #ec6d84;
+}
+
+
+#goukaku_year{
+	width:90%;
+	border:#CCC 1px solid;
+	padding:20px 5%;
+	margin-bottom:30px;
+	}
+
+#goukaku_year h3{
+	color:#FFF;
+	text-align:center;
+	background:#ed778c;
+	font-weight:bolder;
+	font-size:20px;
+	margin-bottom:15px;
+	}
+
+#goukaku_year table {
+	width:100%;}
+#goukaku_year table th{
+	width:40%;
+	}
+
+#goukaku_year table td{
+	width:10%;
+	white-space:nowrap;
+	}
+
+#goukaku_year table th,
+#goukaku_year table td{
+	padding:2px;
+	}
+
+
+.w100{
+	width:100%;}
+
+.pa{
+    background: url(../../images/pa_bg.png) no-repeat top;
+    padding: 15px;
+}
+
+
+.pa div.h3{
+	padding:20px 30px;
+	background:#ffffffa3;
+	color:#ec6d84;
+	margin-bottom:15px;
+	}
+
+.pa div.h3 h3{
+		font-weight:bolder !important;
+		font-size:20px;
+}
+
+.pa div.h3 h3 img{
+    position: absolute;
+    margin: -54px 269px;	}
+
+.pa div.image{
+	border:#FFF 3px solid;
+
+}
+
+
+
+#information .year li a{
+	display: block;
+    border: #949494 1px solid;
+    float: left;
+    margin: 6px;
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: white;
+	}
+
+
+.box{
+	width:100%;
+	text-align:center;}
+
+}
+/*----------------768px_end-------------------*/
+
+@media screen and (max-width:365px){
+#tel_sp{
+	float:right;
+	margin:0 60px 0 0;}/*# テレフォンロゴを70pxから60pxで右に移動 */
+}
+}

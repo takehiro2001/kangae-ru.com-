@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+/*default*/
+/*reset*/
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td{
+margin: 0; padding: 0;
+}
+
+
+html{
+    overflow-y: scroll;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-size: 100%;
+    font-weight: normal;
+}
+
+ol, ul{
+    list-style:none;
+}
+
+fieldset, img{
+     border:0;
+}
+
+table{
+    border-collapse: collapse;
+     border-spacing:0;
+}
+
+caption, th{
+    text-align: left;
+}
+
+address, caption, cite, code, dfn, em, th, var{
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/*text*/
+ 
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Lucida Grande", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+*font-size:small;
+*font:x-small;
+color:#666;
+background-image:url("images/back_image.png");
+background-size: 300px;
+background-repeat: repeat;
+background-attachment: fixed;
+/*min-width: 1130px;画面をフィット*/
+}
+
+
+
+input, textarea {
+font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+}
+
+/* for IE6 */
+* html body {
+font-family: "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+}
+* html input, * html textarea {
+font-family: "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+}
+
+
+.mnc{
+  font-family: "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+
+}
+
+
+
+table {
+    font-size:inherit;
+    font:100%;
+}
+.text10 { font-size:77%; }
+.text11 { font-size:85%; }
+.text12 { font-size:93%; }
+.text13 { font-size:100%; }
+.text14 { font-size:108%; }
+.text15 { font-size:116%; }
+.text16 { font-size:123.1%; }
+.text17 { font-size:131%; }
+.text18 { font-size:138.5%; }
+.text19 { font-size:146.5%; }
+.text20 { font-size:153.9%; }
+.text21 { font-size:161.6%; }
+.text22 { font-size:167%; }
+.text23 { font-size:174%; }
+.text24 { font-size:182%; }
+.text25 { font-size:189%; }
+.text26 { font-size:197%; }
+
+.text24 { font-size:24px;}
+.text30 { font-size:30px;}
+.text32 { font-size:32px;}
+
+
+ /*テキストリンク下線設定*/
+ 
+a {
+	text-decoration: none;
+	}
+	
+a:hover {
+	text-decoration: underline;
+	}
+
+@media screen and (max-width:768px){
+	 /* ハンバーガーアイコン上のテキストとクリックでmenuがcloseに変更するjsと連動 */
+#h-text {
+	position: relative;/*backgroundをハンバーガーメニューの上にする*/
+	font-size: 13px;
+	padding-top: 60px;
+	color: #000000;
+	display: block;
+	background-color: transparent; /*クリック領域の設定*/
+	margin: calc(7% - 7vw) calc(4% - 4vw);/*親要素の半分の幅だけずらして、画面の半分の幅だけ戻す*/
+	/*transform: translateY(-50%);*/
+}
+}
+@media screen and (max-width:640px){
+	 /* ハンバーガーアイコン上のテキストとクリックでmenuがcloseに変更するjsと連動 */
+#h-text {
+	position: relative;/*backgroundをハンバーガーメニューの上にする*/
+	font-size: 13px;
+	padding-top: 53px;
+	color: #000000;
+	display: block;
+	background-color: transparent; /*クリック領域の設定*/
+	margin: calc(7% - 7vw) calc(4% - 4vw);/*親要素の半分の幅だけずらして、画面の半分の幅だけ戻す*/
+	/*transform: translateY(-50%);*/
+}
+}
+@media screen and (max-width:568px){
+	 /* ハンバーガーアイコン上のテキストとクリックでmenuがcloseに変更するjsと連動 */
+#h-text {
+	position: relative;/*backgroundをハンバーガーメニューの上にする*/
+	font-size: 13px;
+	padding-top: 47px;
+	color: #000000;
+	display: block;
+	background-color: transparent; /*クリック領域の設定*/
+	margin: calc(7% - 7vw) calc(4% - 4vw);/*親要素の半分の幅だけずらして、画面の半分の幅だけ戻す*/
+	/*transform: translateY(-50%);*/
+}
+}
+@media screen and (max-width:480px){
+	 /* ハンバーガーアイコン上のテキストとクリックでmenuがcloseに変更するjsと連動 */
+#h-text {
+	position: relative;/*backgroundをハンバーガーメニューの上にする*/
+	font-size: 13px;
+	padding-top: 40px;
+	color: #000000;
+	display: block;
+	background-color: transparent; /*クリック領域の設定*/
+	margin: calc(7% - 7vw) calc(4% - 4vw);/*親要素の半分の幅だけずらして、画面の半分の幅だけ戻す*/
+	/*transform: translateY(-50%);*/
+}
+}
+@media screen and (max-width:320px){
+	 /* ハンバーガーアイコン上のテキストとクリックでmenuがcloseに変更するjsと連動 */
+#h-text {
+	position: relative;/*backgroundをハンバーガーメニューの上にする*/
+	font-size: 13px;
+	padding-top: 32px;
+	color: #000000;
+	display: block;
+	background-color: transparent; /*クリック領域の設定*/
+	margin: calc(7% - 7vw) calc(4% - 4vw);/*親要素の半分の幅だけずらして、画面の半分の幅だけ戻す*/
+	/*transform: translateY(-50%);*/
+}
+}
+
+#tp{
+     margin:10px 0;
+	 font-size:12px;
+	 }
+.tp_mgr-10{
+    margin-right : 20px;/*ipadで見たときに電話番号が右に引っ付くのを右スペース開け*/
+}
+ 
+#tp li {
+     display:inline;
+     line-height:110%;
+     list-style-type:none;
+	 }
+
+#tp li a{
+	padding-right:5px;
+	background:url(../../images/common/tp.png) no-repeat right;
+	}
+
+/*image半透明*/
+
+a:hover img.hoverimg{
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	-ms-filter: "alpha( opacity=80 )";
+	}
+
+input:hover{
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	-ms-filter: "alpha( opacity=80 )";
+	}
+
+body {
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+/*================================================
+ *  SNS用ボタン配置
+ ================================================*/
+.sns-buttons {
+	clear:both;
+	padding:15px 0px 20px 0px;
+	text-align: center;
+	margin: auto;/*テキスト中央*/
+	text-decoration: none;
+}
+.sns-buttons li {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 0;
+	padding-top: 20px;
+	padding-left: 20px;/*ボタン左右の間隔*/
+}
+.sns-buttons a {
+	text-decoration: none;
+}
+
+.sns-buttons a:hover{
+	filter:alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+
+h3.sns-buttons {
+	color: rgb(230, 7, 19);
+	font-family: Poppins, Avenir, Open Sans ,  Helvetica Neue , Helvetica, Arial, Verdana, Roboto, 游ゴシック,  Yu Gothic , 游ゴシック体, YuGothic,  ヒラギノ角ゴ Pro W3 ,  Hiragino Kaku Gothic Pro ,  Meiryo UI , メイリオ, Meiryo,  ＭＳ Ｐゴシック ,  MS PGothic , sans-serif; 
+	font-size: 24px;
+	max-width: 1080px;
+	border-bottom: solid 2px rgb(230, 7, 19);
+	text-align: center;
+}
+/*------------------------------------------------------------*/	
